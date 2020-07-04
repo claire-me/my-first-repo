@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+</head>
+<body>
+  
+  <div>
+    <h1>Register</h1>
+  </div>
+
+<form>  
+<div>
+    <label for="first name">First Name:</label>
+    <input name="first" id="John" type="text"placeholder=John required >
+
+    <label for="last name">Last Name:</label>
+    <input name="last" id="Smith" type="text" placeholder="Smith" required>
+</div>
+
+<div>
+    <label for="male">Male</label>
+    <input name="personality" id="male" type="radio" value="Male">
+    <label for="female">Female</label>
+    <input name="personality" id="female" type="radio" value="Female">
+    <label for="other">Other</label>
+    <input name="personality"id="other" type="radio" value="Other">
+</div>
+
+<div>
+   <label>
+   Email:
+   <input name="email" type="email" required>
+   </label>
+
+   <label>
+   Password:
+   <input name="password" type="password" pattern=".{5,10}" required title="5 to 10 characters">
+   </label>
+</div>
+
+<div>
+    <label>
+      Birthday
+      <select name="Month">
+           <option>Month</option>
+           <option>January</option>
+           <option>Febuary</option>
+           <option>March</option>
+           <option>April</option>
+           <option>May</option>
+           <option>June</option>
+           <option>July</option>
+           <option>August</option>
+           <option>September</option>
+           <option>October</option>
+           <option>November</option>
+           <option>December</option>
+        </select>
+   
+        <select name="Day">
+            <option>Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select >
+   
+        <select name=""Year>
+           <option>Year</option>
+           <option>2001</option>
+           <option>2002</option> 
+           <option>2003</option> 
+           <option>2020</option>
+        </select>
+    </label>   
+</div>  
+
+ <div>
+   <label for="agreement"> I agree to this terms and conditions:</label>
+<input id="agreement" name="agreement" type="checkbox">
+ </div>
+
+<input type="Submit">
+</form>
+</body>
+</html>
